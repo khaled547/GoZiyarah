@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,4 +7,1111 @@
     <title>Document</title>
   </head>
   <body></body>
+=======
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Header Section-->
+
+    <header
+      class="fixed w-full bg-white shadow-md z-50 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <!--  Logo -->
+        <a href="#home" class="flex items-center space-x-2">
+          <img src="./src/image/logo2.jpg" alt="GoZiyarah লোগো" class="w-10 h-10" />
+          <span class="text-2xl font-bold text-emerald-700 tracking-tight"
+            >GoZiyarah</span
+          >
+        </a>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-emerald-800 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+
+        <!--  Desktop Navigation Menu -->
+        <nav
+          id="main-menu"
+          class="hidden md:flex space-x-8 text-emerald-800 font-medium"
+        >
+          <a href="#about" class="hover:text-amber-500 transition"
+            >আমাদের সম্পর্কে</a
+          >
+          <a href="#services" class="hover:text-amber-500 transition">সেবা</a>
+          <a href="#packages" class="hover:text-amber-500 transition"
+            >প্যাকেজ</a
+          >
+          <a href="#consultants" class="hover:text-amber-500 transition"
+            >পরামর্শক</a
+          >
+          <a href="#journey-moments" class="hover:text-amber-500 transition"
+            >যাত্রার মুহূর্ত</a
+          >
+          <a href="#faq" class="hover:text-amber-500 transition">প্রশ্নোত্তর</a>
+          <a href="#contact" class="hover:text-amber-500 transition">যোগাযোগ</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 shadow-md"
+      >
+        <nav
+          class="flex flex-col text-center text-emerald-800 font-medium py-4 space-y-2"
+        >
+          <a href="#home" class="hover:text-amber-500 transition">হোম</a>
+          <a href="#hero" class="hover:text-amber-500 transition">হিরো</a>
+          <a href="#partners" class="hover:text-amber-500 transition"
+            >পার্টনার</a
+          >
+          <a href="#about" class="hover:text-amber-500 transition"
+            >আমাদের সম্পর্কে</a
+          >
+          <a href="#services" class="hover:text-amber-500 transition">সেবা</a>
+          <a href="#packages" class="hover:text-amber-500 transition"
+            >প্যাকেজ</a
+          >
+          <a href="#consultants" class="hover:text-amber-500 transition"
+            >পরামর্শক</a
+          >
+          <a href="#journey-moments" class="hover:text-amber-500 transition"
+            >যাত্রার মুহূর্ত</a
+          >
+          <a href="#faq" class="hover:text-amber-500 transition">প্রশ্নোত্তর</a>
+          <a href="#contact" class="hover:text-amber-500 transition">যোগাযোগ</a>
+        </nav>
+      </div>
+    </header>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <!--Hero Section-->
+
+    <section
+      id="hero"
+      class="relative min-h-[70vh] md:min-h-[85vh] flex items-center justify-start bg-center bg-cover"
+      style="
+        background-image: url('./src/image/ChatGPT\ Image\ Oct\ 31\,\ 2025\,\ 02_50_50\ PM.png');
+      "
+    >
+      <!-- Content -->
+      <div class="w-full">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+          <div class="max-w-3xl py-14 md:py-20 lg:py-24 text-left">
+            <h1
+              class="text-white text-3xl md:text-4xl font-extrabold leading-snug tracking-tight drop-shadow-lg"
+            >
+              আপনার উমরাহ যাত্রা হোক সহজ, সুষ্ঠু ও নিশ্চিন্ত —
+              <span class="text-amber-300 drop-shadow-lg">GoZiyarah</span> এর
+              সাথে।
+            </h1>
+
+            <p
+              class="mt-3 md:mt-4 text-white/90 text-base md:text-lg leading-relaxed drop-shadow-lg"
+            >
+              আমাদের অভিজ্ঞ টিম এবং গাইডদের মাধ্যমে আপনার হজ ও উমরাহ যাত্রা করুন
+              আরও আত্মবিশ্বাসী ও পরিপূর্ণ।
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="mt-6 md:mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="#packages"
+                class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-300 focus-visible:ring-offset-white transition"
+                aria-label="প্যাকেজ দেখুন"
+              >
+                প্যাকেজ দেখুন
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-500 text-emerald-900 font-semibold shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-300 focus-visible:ring-offset-white transition"
+                aria-label="যোগাযোগ করুন"
+              >
+                যোগাযোগ করুন
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section id="partners" class="relative z-20 -mt-20">
+      <div class="max-w-5xl mx-auto px-4">
+        <div
+          class="bg-white border border-gray-100 rounded-xl shadow-lg py-6 px-8 flex justify-center items-center gap-16"
+        >
+          <!-- Partner 1 -->
+          <img
+            src="./src/image/ilma(logo).jpg"
+            alt="Ilma Creative Agency"
+            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
+          />
+
+          <!-- Partner 2 -->
+          <img
+            src="./src/image/salafi city.jpg"
+            alt="Salafi city"
+            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
+          />
+
+          <!-- Partner 3 -->
+          <img
+            src="./src/image/Ibn U(logo).jpg"
+            alt="Ibn"
+            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+
+    <section
+      id="about"
+      class="bg-gradient-to-br from-[#F9FAFB] to-[#F1F5F9] py-20 px-6 lg:px-16"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- 🩵 Left: Text Content -->
+        <div>
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            আমাদের সম্পর্কে <span class="text-amber-600">GoZiyarah</span>
+          </h2>
+          <p class="text-gray-600 leading-relaxed text-lg mb-8">
+            GoZiyarah হলো একটি নির্ভরযোগ্য হাজ্জ ও ওমরাহ ট্রাভেল সেবা
+            প্রতিষ্ঠান। আমরা প্রতিটি মক্কা-মদিনাগামী যাত্রীকে নিরাপদ,
+            স্বস্তিদায়ক এবং আধ্যাত্মিকভাবে পরিপূর্ণ যাত্রা নিশ্চিত করতে কাজ
+            করি। অভিজ্ঞ গাইড, হালাল হোটেল ব্যবস্থা এবং ভিসা সহায়তার মাধ্যমে
+            আমরা আপনার পবিত্র সফরকে সহজ ও স্মরণীয় করে তুলি।
+          </p>
+
+          <!-- 🔢 Stats Cards -->
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div
+              class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
+            >
+              <h3 class="text-3xl font-bold text-amber-600">85+</h3>
+              <p class="text-gray-600 text-sm">সন্তুষ্ট ক্লায়েন্ট</p>
+            </div>
+            <div
+              class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
+            >
+              <h3 class="text-3xl font-bold text-amber-600">65+</h3>
+              <p class="text-gray-600 text-sm">হোটেল পার্টনার</p>
+            </div>
+            <div
+              class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
+            >
+              <h3 class="text-3xl font-bold text-amber-600">150+</h3>
+              <p class="text-gray-600 text-sm">কনসালট্যান্ট ও গাইড</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🖼️ Right: Image -->
+        <div class="relative">
+          <img
+            src="./src/image/about.png"
+            alt="Hajj and Umrah pilgrims with GoZiyarah guides"
+            class="rounded-3xl shadow-xl w-full h-[420px] object-cover"
+            loading="lazy"
+          />
+          <div
+            class="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/20 to-transparent"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!--services section-->
+
+    <section id="services" class="bg-gray-50 py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">আমাদের সেবা</h2>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+          আপনার হজ ও উমরাহ যাত্রাকে সহজ ও নিশ্চিন্ত করতে আমরা সম্পূর্ণ প্যাকেজ
+          সেবা প্রদান করি — ভিসা, হোটেল বুকিং, বিমান টিকিট এবং অভিজ্ঞ গাইডসহ।
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- সার্ভিস ১: ভিসা প্রসেসিং -->
+          <div
+            class="bg-white rounded-xl shadow-md p-8 hover:-translate-y-2 hover:shadow-xl transition"
+          >
+            <div class="flex justify-center mb-4">
+              <!-- আইকন -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-emerald-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M16.5 3.75a2.25 2.25 0 012.25 2.25v12a2.25 2.25 0 01-2.25 2.25h-9A2.25 2.25 0 015.25 18V6a2.25 2.25 0 012.25-2.25h9z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">ভিসা প্রসেসিং</h3>
+            <p class="text-gray-600">
+              দ্রুত, নির্ভরযোগ্য এবং ঝামেলামুক্ত ভিসা প্রক্রিয়া সেবা।
+            </p>
+          </div>
+
+          <!-- সার্ভিস ২: হোটেল বুকিং -->
+          <div
+            class="bg-white rounded-xl shadow-md p-8 hover:-translate-y-2 hover:shadow-xl transition"
+          >
+            <div class="flex justify-center mb-4">
+              <!-- আইকন -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-sky-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M4.5 7.5h15M4.5 12h15m-15 4.5h15"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">হোটেল বুকিং</h3>
+            <p class="text-gray-600">
+              মক্কা ও মদিনার পবিত্র স্থানের কাছাকাছি আরামদায়ক আবাসন।
+            </p>
+          </div>
+
+          <!-- সার্ভিস ৩: বিমান টিকিট -->
+          <div
+            class="bg-white rounded-xl shadow-md p-8 hover:-translate-y-2 hover:shadow-xl transition"
+          >
+            <div class="flex justify-center mb-4">
+              <!-- আইকন -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-yellow-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M10.5 7.5l6 9m0 0H9m7.5-9H7.5"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">বিমান টিকিট</h3>
+            <p class="text-gray-600">
+              শীর্ষস্থানীয় এয়ারলাইনের মাধ্যমে সাশ্রয়ী ভ্রমণ ব্যবস্থা।
+            </p>
+          </div>
+
+          <!-- সার্ভিস ৪: ট্রাভেল গাইড -->
+          <div
+            class="bg-white rounded-xl shadow-md p-8 hover:-translate-y-2 hover:shadow-xl transition"
+          >
+            <div class="flex justify-center mb-4">
+              <!-- আইকন -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-indigo-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">ট্রাভেল গাইড</h3>
+            <p class="text-gray-600">
+              অভিজ্ঞ গাইড টিমের সহায়তায় যাত্রার প্রতিটি ধাপ হবে সহজ ও সুষ্ঠু।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Package section-->
+
+    <section
+      id="packages"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 text-center"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
+          আমাদের হজ ও উমরাহ প্যাকেজসমূহ
+        </h2>
+        <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          আপনার পছন্দ অনুযায়ী প্যাকেজ বেছে নিন — সাশ্রয়ী, আরামদায়ক ও
+          নির্ভরযোগ্য ভ্রমণ অভিজ্ঞতা নিশ্চিতে।
+        </p>
+
+        <!-- Packages Grid -->
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- ইকোনমি প্যাকেজ -->
+          <div
+            class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <!--Img-->
+
+            <img
+              src="./src/image/e.pic.png"
+              alt="ইকোনমি হজ প্যাকেজ"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+            />
+
+            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              ইকোনমি প্যাকেজ
+            </h3>
+            <p class="text-gray-600 mb-4">
+              সাশ্রয়ী মূল্যে মৌলিক সেবাসমূহসহ সম্পূর্ণ উমরাহ অভিজ্ঞতা।
+            </p>
+            <div class="text-3xl font-bold text-[#d4af37] mb-6">USD 999</div>
+
+            <ul class="text-gray-700 text-left space-y-2 mb-6">
+              <li>✅ এয়ার টিকিট অন্তর্ভুক্ত</li>
+              <li>✅ ৩-তারকা হোটেল</li>
+              <li>✅ ভিসা সহায়তা</li>
+              <li>✅ স্থানীয় পরিবহন</li>
+            </ul>
+
+            <a
+              href="#booking"
+              class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+            >
+              এখনই বুক করুন
+            </a>
+          </div>
+
+          <!-- স্ট্যান্ডার্ড প্যাকেজ (হাইলাইটেড) -->
+          <div
+            class="bg-white border-4 border-[#d4af37] rounded-2xl shadow-lg p-10 flex flex-col items-center scale-105 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+          >
+            <!--Img-->
+            <img
+              src="./src/image/s.p.png"
+              alt="standed"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+            />
+
+            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              স্ট্যান্ডার্ড প্যাকেজ
+            </h3>
+            <p class="text-gray-600 mb-4">
+              আরামদায়ক ও সাশ্রয়ী ভ্রমণ, সর্বোত্তম মানের সেবা সহ।
+            </p>
+            <div class="text-3xl font-bold text-emerald-700 mb-6">
+              USD 1,499
+            </div>
+
+            <ul class="text-gray-700 text-left space-y-2 mb-6">
+              <li>✅ সরাসরি ফ্লাইট</li>
+              <li>✅ ৪-তারকা হোটেল</li>
+              <li>✅ প্রফেশনাল গাইড</li>
+              <li>✅ ২৪/৭ সহায়তা</li>
+            </ul>
+
+            <a
+              href="#booking"
+              class="mt-auto bg-emerald-700 text-white font-medium px-6 py-2 rounded-full hover:bg-emerald-800 transition"
+            >
+              এখনই বুক করুন
+            </a>
+          </div>
+
+          <!-- প্রিমিয়াম প্যাকেজ -->
+          <div
+            class="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <!--Img-->
+
+            <img
+              src="./src/image/p.pic.png"
+              alt="premium"
+              class="w-full h-48 object-cover rounded-xl mb-6"
+            />
+
+            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              প্রিমিয়াম প্যাকেজ
+            </h3>
+            <p class="text-gray-600 mb-4">
+              উচ্চমানের হজ/উমরাহ অভিজ্ঞতা, বিলাসবহুল সেবা ও আরামদায়ক ভ্রমণ।
+            </p>
+            <div class="text-3xl font-bold text-[#d4af37] mb-6">USD 2,299</div>
+
+            <ul class="text-gray-700 text-left space-y-2 mb-6">
+              <li>✅ বিজনেস ক্লাস ফ্লাইট</li>
+              <li>✅ ৫-তারকা হোটেল</li>
+              <li>✅ প্রাইভেট ট্রান্সপোর্ট</li>
+              <li>✅ ভিআইপি গাইডেড ট্যুর</li>
+            </ul>
+
+            <a
+              href="#booking"
+              class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+            >
+              এখনই বুক করুন
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultants Section -->
+    <section
+      id="consultants"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">
+          আমাদের পরামর্শকবৃন্দ
+        </h2>
+        <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          অভিজ্ঞ আলেম ও হজ অপারেশন্স এক্সপার্টদের দিকনির্দেশনায় আপনার যাত্রা হবে
+          আরও সহজ ও প্রশান্তিময়।
+        </p>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <article
+            aria-label="    ড. আবু বকর জাকারিয়া হাফি."
+            class="bg-white border border-emerald-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 p-6 text-center"
+          >
+            <img
+              src="./src/image/abu baklar jakariya.jpg"
+              alt="Abu Bakar Jakariya"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-lg font-semibold text-emerald-800">
+              শাইখ আবু বকর জাকারিয়া
+            </h3>
+            <p class="text-sm text-amber-600 mb-2">ইসলামী উপদেষ্টা</p>
+            <p class="text-gray-600 text-sm mb-4">
+              দীর্ঘ ২০ বছরের অভিজ্ঞতায় হজ গাইডেন্স বিশেষজ্ঞ।
+            </p>
+            <button
+              class="bg-emerald-700 text-white text-sm px-4 py-1.5 rounded-full hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বিস্তারিত
+            </button>
+          </article>
+
+          <article
+            aria-label="ওয়াসিউজ্জামান"
+            class="bg-white border border-emerald-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 p-6 text-center"
+          >
+            <img
+              src="./src/image/Wasiuzzaman.jpg"
+              alt="ওয়াসিউজ্জামান"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-lg font-semibold text-emerald-800">
+              ওয়াসিউজ্জামান
+            </h3>
+            <p class="text-sm text-amber-600 mb-2">হজ প্রশিক্ষক</p>
+            <p class="text-gray-600 text-sm mb-4">
+              হজের ফিকহ ও আচার বিষয়ে অভিজ্ঞ প্রশিক্ষক।
+            </p>
+            <button
+              class="bg-emerald-700 text-white text-sm px-4 py-1.5 rounded-full hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বিস্তারিত
+            </button>
+          </article>
+
+          <article
+            aria-label="   ড. মনজুর এলাহী"
+            class="bg-white border border-emerald-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 p-6 text-center"
+          >
+            <img
+              src="./src/image/Dr. Mohammad Monzur E Elahi.jpg"
+              alt="ড. মনজুর এলাহী"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-lg font-semibold text-emerald-800">
+              ড. মনজুর এলাহী
+            </h3>
+            <p class="text-sm text-amber-600 mb-2">শরিয়াহ উপদেষ্টা</p>
+            <p class="text-gray-600 text-sm mb-4">
+              হজের শরিয়াহ বিষয়ক পরামর্শদানে পারদর্শী।
+            </p>
+            <button
+              class="bg-emerald-700 text-white text-sm px-4 py-1.5 rounded-full hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বিস্তারিত
+            </button>
+          </article>
+
+          <article
+            aria-label="সাবিকুল ইসলাম"
+            class="bg-white border border-emerald-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 p-6 text-center"
+          >
+            <img
+              src="./src/image/Sabikul islam.jpg"
+              alt="সাবিকুল ইসলাম"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-lg font-semibold text-emerald-800">
+              সাবিকুল ইসলাম
+            </h3>
+            <p class="text-sm text-amber-600 mb-2">হজ বক্তা</p>
+            <p class="text-gray-600 text-sm mb-4">
+              হজের তাৎপর্য ও নিয়মাবলী নিয়ে জনপ্রিয় বক্তা।
+            </p>
+            <button
+              class="bg-emerald-700 text-white text-sm px-4 py-1.5 rounded-full hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বিস্তারিত
+            </button>
+          </article>
+
+          <article
+            aria-label="মো. আরিফ হোসেন"
+            class="bg-white border border-emerald-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 p-6 text-center"
+          >
+            <img
+              src="./src/image/dini.jpg"
+              alt="মো. হোসেন"
+              class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 class="text-lg font-semibold text-emerald-800">
+              মো. হোসেন
+            </h3>
+            <p class="text-sm text-amber-600 mb-2">হজ অপারেশন্স এক্সপার্ট</p>
+            <p class="text-gray-600 text-sm mb-4">
+              যাত্রী সমন্বয় ও ফ্লাইট ব্যবস্থাপনায় বিশেষজ্ঞ।
+            </p>
+            <button
+              class="bg-emerald-700 text-white text-sm px-4 py-1.5 rounded-full hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বিস্তারিত
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Moments Section -->
+
+    <section
+      id="journey-moments"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">
+          যাত্রার স্মরণীয় মুহূর্তসমূহ
+        </h2>
+        <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          হজ ও উমরাহর প্রতিটি পদক্ষেপে আছে অনুপ্রেরণা, ত্যাগ ও দোয়ার আবেশ। কিছু
+          হৃদয়ছোঁয়া মুহূর্ত এক নজরে।
+        </p>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="relative group overflow-hidden rounded-2xl shadow-md">
+            <img
+              src="./src/image/sopor.jpg"
+              alt="বাসে হজযাত্রীদের যাত্রা"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-emerald-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-500"
+            >
+              <p class="text-white text-lg font-medium">
+                "প্রতিটি যাত্রা শুরু হয় নিয়ত থেকে — আল্লাহর পথে এই সফরই আমাদের
+                প্রকৃত সাফল্য।"
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative group overflow-hidden rounded-2xl shadow-md">
+            <img
+              src="./src/image/takbir.jpg"
+              alt="ইহরামে হাজিদের দল"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-emerald-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-500"
+            >
+              <p class="text-white text-lg font-medium">
+                "সাদা ইহরামে সবাই সমান — এখানে নেই অহংকার, কেবল ভক্তি ও অনুতাপ।"
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative group overflow-hidden rounded-2xl shadow-md">
+            <img
+              src="./src/image/lecture.jpg"
+              alt="হজ প্রশিক্ষণ ক্লাস"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-emerald-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-500"
+            >
+              <p class="text-white text-lg font-medium">
+                "জ্ঞান ছাড়া ইবাদত নয় — প্রস্তুতিই সফল হজের চাবিকাঠি।"
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative group overflow-hidden rounded-2xl shadow-md">
+            <img
+              src="./src/image/eat.jpg"
+              alt="একসাথে খাবার খাওয়া"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-emerald-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-500"
+            >
+              <p class="text-white text-lg font-medium">
+                "একসাথে আহার — সৌহার্দ্য ও ভ্রাতৃত্বের উষ্ণ বন্ধন নবায়ন করে।"
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="relative group overflow-hidden rounded-2xl shadow-md sm:col-span-2 lg:col-span-1 lg:col-start-2"
+          >
+            <img
+              src="./src/image/ustad.jpg"
+              alt="মিনায় দোয়ার সময়"
+              class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-emerald-900/70 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-500"
+            >
+              <p class="text-white text-lg font-medium">
+                "মিনার নিস্তব্ধতায় দোয়ার হাত উঁচু হয়, হৃদয় ভিজে যায় আল্লাহর
+                রহমতের আশায়।"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20">
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-emerald-800 text-center mb-10"
+        >
+          প্রায় জিজ্ঞাসিত প্রশ্নসমূহ
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Q1 -->
+          <details
+            class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
+            >
+              হজ বা উমরাহ ভিসা কিভাবে পাওয়া যায়?
+              <span
+                class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
+                >⌄</span
+              >
+            </summary>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              GoZiyarah আপনার জন্য সম্পূর্ণ ভিসা প্রসেসিংয়ের দায়িত্ব নেয়।
+              প্রয়োজনীয় ডকুমেন্ট জমা দিলেই আমরা সরকারি অনুমোদিত চ্যানেলে আপনার
+              ভিসা প্রক্রিয়া সম্পন্ন করি।
+            </p>
+          </details>
+
+          <!-- Q2 -->
+          <details
+            class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
+            >
+              হজ বা উমরাহ প্যাকেজের মোট খরচ কত?
+              <span
+                class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
+                >⌄</span
+              >
+            </summary>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              প্যাকেজের ধরন অনুযায়ী খরচ ভিন্ন হয় — ইকোনমি, স্ট্যান্ডার্ড এবং
+              প্রিমিয়াম। দাম সাধারণত USD ৯৯৯ থেকে USD ২২৯৯ এর মধ্যে, যা ফ্লাইট,
+              হোটেল ও গাইড সার্ভিসসহ অন্তর্ভুক্ত।
+            </p>
+          </details>
+
+          <!-- Q3 -->
+          <details
+            class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
+            >
+              গাইড সার্ভিস কি প্যাকেজের অন্তর্ভুক্ত?
+              <span
+                class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
+                >⌄</span
+              >
+            </summary>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              জি হ্যাঁ, আমাদের প্রতিটি প্যাকেজে অভিজ্ঞ আলেম ও গাইডদের
+              তত্ত্বাবধানে হজ/উমরাহ কার্যক্রম সম্পন্ন করা হয়। তাঁরা প্রতিটি
+              রীতির সঠিক দিকনির্দেশনা প্রদান করেন।
+            </p>
+          </details>
+
+          <!-- Q4 -->
+          <details
+            class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
+            >
+              মেয়েরা কি একা হজ বা উমরাহ যাত্রা করতে পারেন?
+              <span
+                class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
+                >⌄</span
+              >
+            </summary>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              ইসলামি বিধান অনুযায়ী, নারীদের মাহরাম (অভিভাবক) ছাড়া হজে যাওয়া
+              নিরুৎসাহিত। তবে সরকারি অনুমোদিত গ্রুপে বা বিশেষ অনুমতিতে উমরাহ
+              যাত্রা সম্ভব, আমরা সে বিষয়েও সহায়তা করি।
+            </p>
+          </details>
+
+          <!-- Q5 -->
+          <details
+            class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
+            >
+              বুকিং প্রক্রিয়াটি কেমন?
+              <span
+                class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
+                >⌄</span
+              >
+            </summary>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+              বুকিং খুব সহজ — আপনি অনলাইনে ফর্ম পূরণ করে বা আমাদের অফিসে সরাসরি
+              এসে বুক করতে পারেন। আমরা বুকিং নিশ্চিত হওয়ার পর সমস্ত ট্রাভেল
+              ডিটেইলস ও টিকেট প্রদান করি।
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20">
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-emerald-800 text-center mb-4"
+        >
+          যোগাযোগ করুন
+        </h2>
+        <p class="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
+          হজ ও উমরাহ সংক্রান্ত যেকোনো প্রশ্ন বা বুকিং তথ্যের জন্য আমাদের সাথে
+          যোগাযোগ করুন। আমরা সর্বদা আপনার পাশে আছি।
+        </p>
+
+        <div class="grid gap-10 md:grid-cols-2">
+          <!-- Contact Form -->
+          <form class="bg-white rounded-2xl shadow-md p-8 space-y-5">
+            <div>
+              <label for="name" class="block text-emerald-800 font-medium mb-1"
+                >নাম</label
+              >
+              <input
+                id="name"
+                type="text"
+                placeholder="আপনার পূর্ণ নাম লিখুন"
+                class="w-full border border-emerald-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone" class="block text-emerald-800 font-medium mb-1"
+                >ফোন নম্বর</label
+              >
+              <input
+                id="phone"
+                type="tel"
+                placeholder="ফোন নম্বর দিন"
+                class="w-full border border-emerald-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-emerald-800 font-medium mb-1"
+                >ইমেইল</label
+              >
+              <input
+                id="email"
+                type="email"
+                placeholder="আপনার ইমেইল ঠিকানা"
+                class="w-full border border-emerald-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-emerald-800 font-medium mb-1"
+                >বার্তা</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="আপনার বার্তা লিখুন..."
+                class="w-full border border-emerald-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-emerald-700 text-white font-medium py-2 rounded-lg hover:bg-emerald-800 focus-visible:ring-2 focus-visible:ring-amber-400 transition"
+            >
+              বার্তা পাঠান
+            </button>
+          </form>
+
+          <!-- Contact Info -->
+          <div class="space-y-6 text-emerald-900">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">যোগাযোগের ঠিকানা</h3>
+              <p class="text-gray-700 leading-relaxed">
+                গোজিয়ারাহ ট্রাভেল এজেন্সি<br />
+                ১২৩, মতিঝিল কমার্শিয়াল এরিয়া, ঢাকা-১০০০<br />
+                বাংলাদেশ
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">ফোন ও ইমেইল</h3>
+              <p class="text-gray-700">
+                📞
+                <a href="tel:+8801712345678" class="hover:text-emerald-700"
+                  >01828-877771</a
+                ><br />
+                ✉️
+                <a
+                  href="mailto:goziyarah@gmail.com"
+                  class="hover:text-emerald-700"
+                  >goziyarah@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-2">অফিস সময়</h3>
+              <p class="text-gray-700">
+                শনিবার - বৃহস্পতিবার: সকাল ৯টা - সন্ধ্যা ৭টা<br />শুক্রবার: বন্ধ
+              </p>
+            </div>
+
+            <!-- Google Map -->
+            <div class="rounded-xl overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.900122961621!2d90.42026751544495!3d23.75087678459035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b1e5a63e81%3A0x4dd0e0b5f2b1b3c0!2sMotijheel%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1701456000000!5m2!1sen!2sbd"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-emerald-800 text-white py-12 px-6 md:px-12 lg:px-20">
+      <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+        <!-- ১️⃣ লোগো ও ছোট বিবরণ -->
+        <div>
+          <div class="flex items-center space-x-2 mb-3">
+            <img
+              src="./src/image/logo2.jpg"
+              alt="GoZiyarah লোগো"
+              class="w-10 h-10"
+            />
+            <h2 class="text-2xl font-bold">GoZiyarah</h2>
+          </div>
+          <p class="text-gray-200 leading-relaxed">
+            বিশ্বস্ত হজ ও উমরাহ ট্রাভেল পার্টনার — আল্লাহর পথে আপনার যাত্রাকে
+            করে তুলুন আরও সহজ, নিরাপদ ও শান্তিময়।
+          </p>
+        </div>
+
+        <!-- ২️⃣ গুরুত্বপূর্ণ লিংক -->
+        <div>
+          <h3
+            class="text-xl font-semibold mb-3 border-b border-emerald-600 pb-1 inline-block"
+          >
+            গুরুত্বপূর্ণ লিংক
+          </h3>
+          <ul class="space-y-2 mt-3">
+            <li>
+              <a href="#home" class="hover:text-amber-300 transition">হোম</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-amber-300 transition"
+                >আমাদের সম্পর্কে</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-amber-300 transition"
+                >সেবা</a
+              >
+            </li>
+            <li>
+              <a href="#packages" class="hover:text-amber-300 transition"
+                >প্যাকেজ</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-amber-300 transition"
+                >যোগাযোগ</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- ৩️⃣ যোগাযোগের তথ্য -->
+        <div>
+          <h3
+            class="text-xl font-semibold mb-3 border-b border-emerald-600 pb-1 inline-block"
+          >
+            যোগাযোগ
+          </h3>
+          <p class="text-gray-200 mt-3">
+            📞
+            <a href="tel:+8801712345678" class="hover:text-amber-300 transition"
+              >01828-877771</a
+            ><br />
+            ✉️
+            <a
+              href="mailto:goziyarah@gmail.com"
+              class="hover:text-amber-300 transition"
+              >goziyarah@gmail.com</a
+            ><br />
+            📍 ১২৩, মতিঝিল কমার্শিয়াল এরিয়া, ঢাকা-১০০০
+          </p>
+
+          <!-- ৪️⃣ সোশ্যাল মিডিয়া আইকন -->
+          <div class="flex space-x-4 mt-4">
+            <a
+              href="#"
+              class="hover:text-amber-300 transition"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="hover:text-amber-300 transition"
+              aria-label="YouTube"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 15l5.19-3L10 9v6zm12-3c0-2.5-.2-4.1-.3-5.1-.2-1-.9-1.8-1.9-2C18.9 4.5 12 4.5 12 4.5s-6.9 0-7.8.4c-1 .2-1.7 1-1.9 2C2.2 7.9 2 9.5 2 12s.2 4.1.3 5.1c.2 1 .9 1.8 1.9 2 .9.4 7.8.4 7.8.4s6.9 0 7.8-.4c1-.2 1.7-1 1.9-2 .1-1 .3-2.6.3-5.1z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="hover:text-amber-300 transition"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- কপিরাইট -->
+      <div
+        class="border-t border-emerald-700 mt-10 pt-6 text-center text-gray-300 text-sm"
+      >
+        © ২০২৫ GoZiyarah. সর্বস্বত্ব সংরক্ষিত।
+      </div>
+    </footer>
+
+    <!--minor upate-->
+    <script src="src/app.js"></script>
+  </body>
+>>>>>>> daf6a92da7e0ce83acebf15040d3f96cea12ff12
 </html>
