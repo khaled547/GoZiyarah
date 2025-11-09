@@ -17,14 +17,14 @@
         <!--  Logo -->
         <a href="#home" class="flex items-center space-x-2">
           <img src="./image/logo2.jpg" alt="GoZiyarah লোগো" class="w-10 h-10" />
-          <span class="text-2xl font-bold text-emerald-700 tracking-tight"
+          <span class="text-2xl font-bold text-blue-950 tracking-tight"
             >GoZiyarah</span
           >
         </a>
 
         <button
           id="menu-btn"
-          class="md:hidden text-emerald-800 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          class="md:hidden text-blue-950 focus:outline-none focus:ring-2 focus:ring-amber-400"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,13 +71,10 @@
         class="hidden md:hidden bg-white border-t border-gray-100 shadow-md"
       >
         <nav
-          class="flex flex-col text-center text-emerald-800 font-medium py-4 space-y-2"
+          class="flex flex-col text-center text-blue-950 font-medium py-4 space-y-2"
         >
           <a href="#home" class="hover:text-amber-500 transition">হোম</a>
           <a href="#hero" class="hover:text-amber-500 transition">হিরো</a>
-          <a href="#partners" class="hover:text-amber-500 transition"
-            >পার্টনার</a
-          >
           <a href="#about" class="hover:text-amber-500 transition"
             >আমাদের সম্পর্কে</a
           >
@@ -153,48 +150,18 @@
       </div>
     </section>
 
-    <!-- Partner Section -->
-    <section id="partners" class="relative z-20 -mt-20">
-      <div class="max-w-5xl mx-auto px-4">
-        <div
-          class="bg-white border border-gray-100 rounded-xl shadow-lg py-6 px-8 flex justify-center items-center gap-16"
-        >
-          <!-- Partner 1 -->
-          <img
-            src="./image/ilma(logo).jpg"
-            alt="Ilma Creative Agency"
-            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
-          />
-
-          <!-- Partner 2 -->
-          <img
-            src="./image/salafi city.jpg"
-            alt="Salafi city"
-            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
-          />
-
-          <!-- Partner 3 -->
-          <img
-            src="./image/Ibn U(logo).jpg"
-            alt="Ibn"
-            class="h-16 md:h-20 object-contain grayscale hover:grayscale-0 transition"
-          />
-        </div>
-      </div>
-    </section>
-
     <!--About Section-->
 
     <section
       id="about"
-      class="bg-gradient-to-br from-[#F9FAFB] to-[#F1F5F9] py-20 px-6 lg:px-16"
+      class="bg-gradient-to-br from-[#F9FAFB] to-[#F1F5F9] py-20 px-6 lg:px-16 reveal opacity-0 translate-y-10 transition-all duration-700"
     >
       <div
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
       >
         <!-- 🩵 Left: Text Content -->
         <div>
-          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+          <h2 class="text-4xl font-bold text-blue-950 mb-4">
             আমাদের সম্পর্কে <span class="text-amber-600">GoZiyarah</span>
           </h2>
           <p class="text-gray-600 leading-relaxed text-lg mb-8">
@@ -210,19 +177,34 @@
             <div
               class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
             >
-              <h3 class="text-3xl font-bold text-amber-600">85+</h3>
+              <h3
+                class="text-3xl font-bold text-amber-600 counter"
+                data-target="120"
+              >
+                0
+              </h3>
               <p class="text-gray-600 text-sm">সন্তুষ্ট ক্লায়েন্ট</p>
             </div>
             <div
               class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
             >
-              <h3 class="text-3xl font-bold text-amber-600">65+</h3>
+              <h3
+                class="text-3xl font-bold text-amber-600 counter"
+                data-target="90"
+              >
+                0
+              </h3>
               <p class="text-gray-600 text-sm">হোটেল পার্টনার</p>
             </div>
             <div
               class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-4"
             >
-              <h3 class="text-3xl font-bold text-amber-600">150+</h3>
+              <h3
+                class="text-3xl font-bold text-amber-600 counter"
+                data-target="150"
+              >
+                0
+              </h3>
               <p class="text-gray-600 text-sm">কনসালট্যান্ট ও গাইড</p>
             </div>
           </div>
@@ -245,9 +227,12 @@
 
     <!--services section-->
 
-    <section id="services" class="bg-gray-50 py-20">
+    <section
+      id="services"
+      class="bg-gray-50 py-20 reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
       <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">আমাদের সেবা</h2>
+        <h2 class="text-3xl font-bold text-blue-950 mb-4">আমাদের সেবা</h2>
         <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
           আপনার হজ ও উমরাহ যাত্রাকে সহজ ও নিশ্চিন্ত করতে আমরা সম্পূর্ণ প্যাকেজ
           সেবা প্রদান করি — ভিসা, হোটেল বুকিং, বিমান টিকিট এবং অভিজ্ঞ গাইডসহ।
@@ -275,7 +260,9 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">ভিসা প্রসেসিং</h3>
+            <h3 class="text-xl font-semibold text-blue-950 mb-2">
+              ভিসা প্রসেসিং
+            </h3>
             <p class="text-gray-600">
               দ্রুত, নির্ভরযোগ্য এবং ঝামেলামুক্ত ভিসা প্রক্রিয়া সেবা।
             </p>
@@ -302,7 +289,9 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">হোটেল বুকিং</h3>
+            <h3 class="text-xl text-blue-950 font-semibold mb-2">
+              হোটেল বুকিং
+            </h3>
             <p class="text-gray-600">
               মক্কা ও মদিনার পবিত্র স্থানের কাছাকাছি আরামদায়ক আবাসন।
             </p>
@@ -329,7 +318,9 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">বিমান টিকিট</h3>
+            <h3 class="text-xl text-blue-950 font-semibold mb-2">
+              বিমান টিকিট
+            </h3>
             <p class="text-gray-600">
               শীর্ষস্থানীয় এয়ারলাইনের মাধ্যমে সাশ্রয়ী ভ্রমণ ব্যবস্থা।
             </p>
@@ -356,7 +347,9 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-2">ট্রাভেল গাইড</h3>
+            <h3 class="text-xl text-blue-950 font-semibold mb-2">
+              ট্রাভেল গাইড
+            </h3>
             <p class="text-gray-600">
               অভিজ্ঞ গাইড টিমের সহায়তায় যাত্রার প্রতিটি ধাপ হবে সহজ ও সুষ্ঠু।
             </p>
@@ -369,11 +362,11 @@
 
     <section
       id="packages"
-      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 text-center"
+      class="bg-blue-100 py-16 px-6 md:px-12 lg:px-20 text-center reveal opacity-0 translate-y-10 transition-all duration-700"
     >
       <div class="max-w-7xl mx-auto">
         <!-- Section Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
           আমাদের হজ ও উমরাহ প্যাকেজসমূহ
         </h2>
         <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
@@ -395,7 +388,7 @@
               class="w-full h-48 object-cover rounded-xl mb-6"
             />
 
-            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+            <h3 class="text-2xl font-semibold text-blue-950 mb-2">
               ইকোনমি প্যাকেজ
             </h3>
             <p class="text-gray-600 mb-4">
@@ -412,7 +405,7 @@
 
             <a
               href="#booking"
-              class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+              class="mt-auto bg-[#d4af37] text-blue-950 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
             >
               এখনই বুক করুন
             </a>
@@ -420,7 +413,7 @@
 
           <!-- স্ট্যান্ডার্ড প্যাকেজ (হাইলাইটেড) -->
           <div
-            class="bg-white border-4 border-[#d4af37] rounded-2xl shadow-lg p-10 flex flex-col items-center scale-105 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            class="bg-white border-4 border-[#201161] rounded-2xl shadow-lg p-10 flex flex-col items-center scale-105 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
           >
             <!--Img-->
             <img
@@ -429,7 +422,7 @@
               class="w-full h-48 object-cover rounded-xl mb-6"
             />
 
-            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+            <h3 class="text-2xl font-semibold text-blue-950 mb-2">
               স্ট্যান্ডার্ড প্যাকেজ
             </h3>
             <p class="text-gray-600 mb-4">
@@ -448,7 +441,7 @@
 
             <a
               href="#booking"
-              class="mt-auto bg-emerald-700 text-white font-medium px-6 py-2 rounded-full hover:bg-emerald-800 transition"
+              class="mt-auto bg-blue-700 text-white font-medium px-6 py-2 rounded-full hover:bg-emerald-800 transition"
             >
               এখনই বুক করুন
             </a>
@@ -466,7 +459,7 @@
               class="w-full h-48 object-cover rounded-xl mb-6"
             />
 
-            <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+            <h3 class="text-2xl font-semibold text-blue-950 mb-2">
               প্রিমিয়াম প্যাকেজ
             </h3>
             <p class="text-gray-600 mb-4">
@@ -483,7 +476,7 @@
 
             <a
               href="#booking"
-              class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+              class="mt-auto bg-[#d4af37] text-blue-950 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
             >
               এখনই বুক করুন
             </a>
@@ -495,7 +488,7 @@
     <!-- Consultants Section -->
     <section
       id="consultants"
-      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700"
     >
       <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">
@@ -629,7 +622,7 @@
 
     <section
       id="journey-moments"
-      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700"
     >
       <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">
@@ -729,7 +722,10 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20">
+    <section
+      id="faq"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
       <div class="max-w-4xl mx-auto">
         <h2
           class="text-3xl md:text-4xl font-bold text-emerald-800 text-center mb-10"
@@ -842,7 +838,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20">
+    <section
+      id="contact"
+      class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
       <div class="max-w-7xl mx-auto">
         <h2
           class="text-3xl md:text-4xl font-bold text-emerald-800 text-center mb-4"
@@ -966,7 +965,9 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-emerald-800 text-white py-12 px-6 md:px-12 lg:px-20">
+    <footer
+      class="bg-emerald-800 text-white py-12 px-6 md:px-12 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700"
+    >
       <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
         <!-- ১️⃣ লোগো ও ছোট বিবরণ -->
         <div>
@@ -1101,7 +1102,13 @@
       </div>
     </footer>
 
-    <!--minor upate-->
+    <!--Top Buttom-->
+    <button
+      id="toTop"
+      class="hidden fixed bottom-6 right-6 bg-blue-950 text-white px-3 py-2 rounded shadow-lg hover:bg-blue-800"
+    >
+      Top
+    </button>
     <script src="../src/app.js"></script>
   </body>
 </html>
