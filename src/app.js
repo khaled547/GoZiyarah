@@ -116,42 +116,108 @@ window.addEventListener("scroll", () => {
     startCounter();
   }
 });
-/* ৩. FAQ সেকশন Toggle (accordion effect) */
-// সব <details> এলিমেন্ট সিলেক্ট করা
-const faqItems = document.querySelectorAll("#faq details");
 
-faqItems.forEach((item) => {
-  item.addEventListener("toggle", () => {
-    // যখন একটি FAQ খোলে, অন্যগুলো বন্ধ হবে
-    if (item.open) {
-      faqItems.forEach((other) => {
-        if (other !== item) {
-          other.removeAttribute("open");
-        }
-      });
-    }
+//Services section js
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-6");
+        entry.target.classList.add("opacity-100", "translate-y-0");
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+document.querySelectorAll(".service-card").forEach((card) => {
+  card.classList.add("transition", "duration-700");
+  observer.observe(card);
+});
+
+const modal = document.getElementById("serviceModal");
+const closeBtn = document.getElementById("closeModal");
+const title = document.getElementById("modalTitle");
+const text = document.getElementById("modalText");
+
+document.querySelectorAll(".service-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    title.textContent = card.dataset.title;
+    text.textContent = card.dataset.text;
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
   });
 });
 
-/*৪. Contact Form Submit Alert */
-const contactForm = document.querySelector("form");
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+});
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+});
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // পেজ রিফ্রেশ বন্ধ করে
-    alert(
-      "✅ আপনার বার্তা সফলভাবে পাঠানো হয়েছে! \nআমাদের টিম খুব শীঘ্রই আপনার সাথে যোগাযোগ করবে।"
-    );
-    contactForm.reset();
+// Consultants Section
+
+const modal1 = document.getElementById("consultModal");
+const closeBtn1 = document.getElementById("closeConsult");
+const nameEl = document.getElementById("cName");
+const roleEl = document.getElementById("cRole");
+const infoEl = document.getElementById("cInfo");
+const imgEl = document.getElementById("cImg");
+
+document.querySelectorAll(".btn-details").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    nameEl.textContent = btn.dataset.name;
+    roleEl.textContent = btn.dataset.role;
+    infoEl.textContent = btn.dataset.info;
+    imgEl.src = btn.dataset.img;
+    modal1.classList.remove("hidden");
+    modal1.classList.add("flex");
   });
-}
+});
 
-/* ঐচ্ছিক: স্ক্রল করলে Navbar ছোট করা (স্টিকি effect)*/
-const header = document.querySelector("header");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    header.classList.add("shadow-lg", "py-2");
-  } else {
-    header.classList.remove("shadow-lg", "py-2");
+closeBtn1.addEventListener("click", () => modal1.classList.add("hidden"));
+modal1.addEventListener("click", (e) => {
+  if (e.target === modal1) modal1.classList.add("hidden");
+});
+
+// Auto slider effect
+const grid = document.querySelector("#consultants .grid");
+let scrollPos = 0;
+
+setInterval(() => {
+  scrollPos += 300; // প্রতি বার ৩০০পিক্সেল করে এগোবে
+  if (scrollPos >= grid.scrollWidth - grid.clientWidth) scrollPos = 0;
+  grid.scrollTo({ left: scrollPos, behavior: "smooth" });
+}, 3000);
+
+//joureny section
+
+const imgs = document.querySelectorAll(".journey-img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn2 = document.getElementById("lightboxClose");
+
+imgs.forEach((img) => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.dataset.img;
+    lightbox.classList.remove("hidden");
+    lightbox.classList.add("flex");
+  });
+});
+
+// 2. Lightbox close
+closeBtn2.addEventListener("click", () => {
+  lightbox.classList.add("hidden");
+});
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    // overlay তে ক্লিক করলে বন্ধ
+    lightbox.classList.add("hidden");
   }
 });
