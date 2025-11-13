@@ -820,134 +820,33 @@
           </div>
         </div>
       </section>
-      <!-- Lightbox Popup -->
-      <div
-        id="lightbox"
-        class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50"
-      >
-        <img
-          id="lightboxImg"
-          src=""
-          alt=""
-          class="max-w-3xl max-h-[90vh] rounded-lg shadow-2xl border-4 border-white"
-        />
-        <button
-          id="lightboxClose"
-          class="absolute top-5 right-8 text-white text-3xl"
-        >
-          ✕
-        </button>
-      </div>
 
       <!-- FAQ Section -->
-      <section id="faq" class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20">
+      <section id="faq" class="bg-blue-100 py-16 px-6 md:px-12 lg:px-20">
         <div class="max-w-4xl mx-auto">
           <h2
-            class="text-3xl md:text-4xl font-bold text-emerald-800 text-center mb-10"
+            class="text-3xl md:text-4xl font-bold text-blue-950 text-center mb-10"
           >
             প্রায় জিজ্ঞাসিত প্রশ্নসমূহ
           </h2>
 
-          <div class="space-y-4">
-            <!-- Q1 -->
-            <details
-              class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
-            >
-              <summary
-                class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
-              >
-                হজ বা উমরাহ ভিসা কিভাবে পাওয়া যায়?
-                <span
-                  class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
-                  >⌄</span
-                >
-              </summary>
-              <p class="mt-3 text-gray-700 leading-relaxed">
-                GoZiyarah আপনার জন্য সম্পূর্ণ ভিসা প্রসেসিংয়ের দায়িত্ব নেয়।
-                প্রয়োজনীয় ডকুমেন্ট জমা দিলেই আমরা সরকারি অনুমোদিত চ্যানেলে
-                আপনার ভিসা প্রক্রিয়া সম্পন্ন করি।
-              </p>
-            </details>
+          <!-- এখানে JS প্রশ্ন যোগ করবে -->
+          <div id="faqList" class="space-y-4"></div>
 
-            <!-- Q2 -->
-            <details
-              class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
+          <!-- নিচের সহায়তা বার -->
+          <div
+            id="faqAssistBar"
+            class="hidden mt-8 rounded-xl bg-emerald-100 border border-blue-200 p-4 flex items-center justify-between"
+          >
+            <p class="text-blue-900 text-sm">
+              যা খুঁজছেন পাচ্ছেন না? আমাদের বিশেষজ্ঞের সাথে কথা বলুন।
+            </p>
+            <a
+              href="#contact"
+              class="bg-blue-700 text-white text-sm px-4 py-2 rounded-full hover:bg-blue-900"
             >
-              <summary
-                class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
-              >
-                হজ বা উমরাহ প্যাকেজের মোট খরচ কত?
-                <span
-                  class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
-                  >⌄</span
-                >
-              </summary>
-              <p class="mt-3 text-gray-700 leading-relaxed">
-                প্যাকেজের ধরন অনুযায়ী খরচ ভিন্ন হয় — ইকোনমি, স্ট্যান্ডার্ড এবং
-                প্রিমিয়াম। দাম সাধারণত USD ৯৯৯ থেকে USD ২২৯৯ এর মধ্যে, যা
-                ফ্লাইট, হোটেল ও গাইড সার্ভিসসহ অন্তর্ভুক্ত।
-              </p>
-            </details>
-
-            <!-- Q3 -->
-            <details
-              class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
-            >
-              <summary
-                class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
-              >
-                গাইড সার্ভিস কি প্যাকেজের অন্তর্ভুক্ত?
-                <span
-                  class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
-                  >⌄</span
-                >
-              </summary>
-              <p class="mt-3 text-gray-700 leading-relaxed">
-                জি হ্যাঁ, আমাদের প্রতিটি প্যাকেজে অভিজ্ঞ আলেম ও গাইডদের
-                তত্ত্বাবধানে হজ/উমরাহ কার্যক্রম সম্পন্ন করা হয়। তাঁরা প্রতিটি
-                রীতির সঠিক দিকনির্দেশনা প্রদান করেন।
-              </p>
-            </details>
-
-            <!-- Q4 -->
-            <details
-              class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
-            >
-              <summary
-                class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
-              >
-                মেয়েরা কি একা হজ বা উমরাহ যাত্রা করতে পারেন?
-                <span
-                  class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
-                  >⌄</span
-                >
-              </summary>
-              <p class="mt-3 text-gray-700 leading-relaxed">
-                ইসলামি বিধান অনুযায়ী, নারীদের মাহরাম (অভিভাবক) ছাড়া হজে যাওয়া
-                নিরুৎসাহিত। তবে সরকারি অনুমোদিত গ্রুপে বা বিশেষ অনুমতিতে উমরাহ
-                যাত্রা সম্ভব, আমরা সে বিষয়েও সহায়তা করি।
-              </p>
-            </details>
-
-            <!-- Q5 -->
-            <details
-              class="group bg-white rounded-xl shadow-sm border border-emerald-100 p-5 open:shadow-md open:border-emerald-300 transition-all duration-300"
-            >
-              <summary
-                class="flex justify-between items-center cursor-pointer text-lg font-medium text-emerald-800"
-              >
-                বুকিং প্রক্রিয়াটি কেমন?
-                <span
-                  class="text-emerald-700 group-open:rotate-180 transition-transform duration-300"
-                  >⌄</span
-                >
-              </summary>
-              <p class="mt-3 text-gray-700 leading-relaxed">
-                বুকিং খুব সহজ — আপনি অনলাইনে ফর্ম পূরণ করে বা আমাদের অফিসে
-                সরাসরি এসে বুক করতে পারেন। আমরা বুকিং নিশ্চিত হওয়ার পর সমস্ত
-                ট্রাভেল ডিটেইলস ও টিকেট প্রদান করি।
-              </p>
-            </details>
+              যোগাযোগ করুন
+            </a>
           </div>
         </div>
       </section>
