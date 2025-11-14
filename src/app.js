@@ -1,3 +1,5 @@
+console.log("JS OK!");
+
 /* 
  ১. Navbar Toggle (মোবাইলে মেনু খোলা/বন্ধ)
 */
@@ -198,118 +200,52 @@ setInterval(() => {
 
 //FAQ section
 
-const faqList = document.getElementById("faqList");
+//All element ke call kora hoyse
 
-// প্রশ্ন + উত্তর ডেটা
-const faqs = [
-  {
-    id: "faq1",
-    q: "হজ বা উমরাহ ভিসা কিভাবে পাওয়া যায়?",
-    a: "GoZiyarah সম্পূর্ণ ভিসা প্রসেসিংয়ের দায়িত্ব নেয়।",
-  },
-  {
-    id: "faq2",
-    q: "হজ বা উমরাহ প্যাকেজের মোট খরচ কত?",
-    a: "প্যাকেজের ধরন অনুযায়ী খরচ ভিন্ন হয়।",
-  },
-  {
-    id: "faq3",
-    q: "গাইড সার্ভিস কি অন্তর্ভুক্ত?",
-    a: "জি হ্যাঁ, প্রতিটি প্যাকেজে গাইড থাকে।",
-  },
-  {
-    id: "faq4",
-    q: "মেয়েরা কি একা হজ বা উমরাহ করতে পারেন?",
-    a: "মাহরাম ছাড়া হজ করা নিরুৎসাহিত।",
-  },
-  {
-    id: "faq5",
-    q: "বুকিং প্রক্রিয়াটি কেমন?",
-    a: "অনলাইনে অথবা অফিসে এসে বুক করা যায়।",
-  },
-];
+const faqButtons = document.querySelectorAll("[data-faq-btn]");
+const faqAssistBar = document.getElementById("faqAssistBar");
+faqButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const id = button.dataset.faqBtn;
+    // যেই FAQ খুলো, browser automatically উপরে এনে দেখাবে
+    button.scrollIntoView({ behavior: "smooth", block: "center" });
 
-// ---- FAQ HTML তৈরি ----
-faqs.forEach((item) => {
-  const details = document.createElement("details");
-  details.className =
-    "bg-white border border-blue-300 rounded-xl shadow-sm p-5 transition-all duration-300";
+    const content = document.getElementById("faq-content-" + id);
+    const icon = document.getElementById("icon-" + id);
+    const isOpen = !content.classList.contains("hidden");
+    const allcontents = document.querySelectorAll(".faq-content");
+    const allIcons = document.querySelectorAll("[id^='icon-']");
 
-  const summary = document.createElement("summary");
-  summary.innerHTML = `
-    <span>${item.q}</span>
-    <span class="arrow text-blue-700 transition-transform duration-300">⌄</span>
-  `;
-  summary.className =
-    "flex justify-between items-center cursor-pointer text-lg font-medium text-blue-900 select-none";
+    allcontents.forEach(function (item) {
+      item.style.height = "0px"; //Smooth Slide Animation (Accordion effect)
+      item.classList.add("hidden");
+    });
 
-  summary.querySelector(".arrow").classList.toggle("rotate-180");
+    allIcons.forEach(function (ic) {
+      ic.textContent = "+";
+      ic.classList.remove("rotate-180"); //rotate korbe qus clicl korle
+    });
 
-  const p = document.createElement("p");
-  p.textContent = item.a;
-  p.className =
-    "mt-3 text-gray-700 leading-relaxed border-t border-blue-100 pt-3";
+    if (!isOpen) {
+      content.classList.remove("hidden");
+      content.style.height = content.scrollHeight + "px"; //Smooth Slide Animation (Accordion effect)
+      icon.textContent = "-";
+      icon.classList.add("rotate-180"); //rotate korbe qus clicl korle
+    }
 
-  const wrapper = document.createElement("div");
-  wrapper.className =
-    "faq-content overflow-hidden transition-all duration-300 max-h-0";
+    if (faqAssistBar) {
+      let anyOpen = false;
 
-  wrapper.appendChild(p);
-  details.appendChild(summary);
-  details.appendChild(wrapper);
-  faqList.appendChild(details);
-});
-
-// ---- Custom Toggle Logic (Smooth Animation + One Open at a Time) ----
-faqList.addEventListener("click", (e) => {
-  const clickedSummary = e.target.closest("summary");
-  if (!clickedSummary) return;
-
-  const clickedDetails = clickedSummary.parentElement;
-
-  // অন্য সব বন্ধ করো
-  document.querySelectorAll("#faqList details").forEach((d) => {
-    const content = d.querySelector(".faq-content");
-
-    if (d !== clickedDetails) {
-      d.removeAttribute("open");
-      content.style.maxHeight = "0px";
+      document.querySelectorAll(".faq-content").forEach(function (item) {
+        if (!item.classList.contains("hidden")) {
+          anyOpen = true;
+        }
+      });
+      if (anyOpen) {
+        faqAssistBar.classList.remove("hidden");
+      } else {
+        faqAssistBar.classList.add("hidden");
+      }
     }
   });
-
-  // নিজেরটা toggle করো
-  const content = clickedDetails.querySelector(".faq-content");
-
-  if (clickedDetails.hasAttribute("open")) {
-    clickedDetails.removeAttribute("open");
-    content.style.maxHeight = "0px";
-  } else {
-    clickedDetails.setAttribute("open", "");
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
 });
-/*
-//card–এ highlight effect
-faqList.addEventListener("toggle", (e) => {
-  const d = e.target;
-  if (d.tagName !== "DETAILS") return;
-
-  if (d.open) {
-    d.classList.add("border-blue-500", "shadow-lg");
-  } else {
-    d.classList.remove("border-blue-500", "shadow-lg");
-  }
-});
-
-//Auto-scroll to opened question (যখন এক প্রশ্ন খুলবে →
-// পেজ নিজে নিজে স্ক্রল করে সেই প্রশ্নটি স্ক্রিনের মাঝখানে নিয়ে আসবে।)
-
-faqList.addEventListener("toggle", (e) => {
-  const d = e.target;
-  if (d.tagName !== "DETAILS" || !d.open) return;
-
-  d.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-  });
-});*/
