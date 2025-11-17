@@ -249,3 +249,73 @@ faqButtons.forEach(function (button) {
     }
   });
 });
+
+// contact section
+
+// Element call kora hoyse
+var form = document.getElementById("contactForm");
+var nameInput = document.getElementById("name");
+var phoneInput = document.getElementById("phone");
+var emailInput = document.getElementById("email");
+var messageInput = document.getElementById("message");
+var submitBtn = document.getElementById("contactSubmit");
+var feedbackBox = document.getElementById("formFeedback");
+
+var nameError = document.getElementById("nameError");
+var phoneError = document.getElementById("phoneError");
+var emailError = document.getElementById("emailError");
+
+//ফর্ম সাবমিট ইভেন্ট ধরো
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  var nameValue = nameInput.value.trim();
+  var phoneValue = phoneInput.value.trim();
+  var emailValue = emailInput.value.trim();
+  var messageValue = messageInput.value.trim();
+
+  nameError.textContent = "";
+  phoneError.textContent = "";
+  emailError.textContent = "";
+
+  nameError.classList.add("hidden");
+  phoneError.classList.add("hidden");
+  emailError.classList.add("hidden");
+
+  feedbackBox.textContent = "";
+  feedbackBox.className = "";
+
+  var hasError = false;
+  if (nameValue === "") {
+    nameError.textContent = "নাম লিখুন।";
+    nameError.classList.remove("hidden");
+    hasError = true;
+  }
+
+  if (phoneValue === "") {
+    phoneError.textContent = "ফোন নম্বর লিখুন।";
+    phoneError.classList.remove("hidden");
+    hasError = "true";
+  } else if (phoneValue.length < 11) {
+    phoneError.textContent = "ফোন নম্বর কমপক্ষে ১১ ডিজিট হওয়া উচিত।";
+    phoneError.classList.remove("hidden");
+    hasError = true;
+  }
+
+  if (emailValue !== "" && !emailValue.includes("@")) {
+    emailError.textContent =
+      "সঠিক ইমেইল অ্যাড্রেস লিখুন (যেমন: name@example.com)।";
+    emailError.classList.remove("hidden");
+    hasError = true;
+  }
+
+  if (hasError) {
+    return;
+  }
+
+  feedbackBox.textContent =
+    "ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে (demo)।";
+  feedbackBox.className = "text-emerald-600 font-medium mt-2";
+
+  form.reset();
+});
