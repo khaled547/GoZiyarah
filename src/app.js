@@ -163,6 +163,57 @@ modal.addEventListener("click", (e) => {
   }
 });
 
+// Package Section
+
+// Hover Animation
+const cards = document.querySelectorAll(".js-package-card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.classList.add("hovered");
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.classList.remove("hovered");
+  });
+});
+
+//Book Now Button > selected package Show
+
+const selectButtons = document.querySelectorAll(".js-package-select");
+
+selectButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".js-package-card");
+
+    const packageName = card.dataset.packge;
+    const priceUSD = card.dataset.priceUSD;
+
+    console.log("Selected package:, PackageName");
+    console.log("Price (USD):", priceUSD);
+  });
+});
+
+//Price Converter
+
+let showUSD = true;
+
+const priceElements = document.querySelectorAll(".js-package-price");
+
+document.getElementById("priceToggleBtn").addEventListener("click", () => {
+  showUSD = !showUSD;
+
+  priceElements.forEach((priceEl) => {
+    const card = priceEl.closest(".js-package-card");
+    const usd = card.dataset.priceUsd;
+    const bdt = usd * 120;
+
+    priceEl.textContent = showUSD
+      ? `USD ${usd}`
+      : `BDT ${bdt.toLocaleString()}`;
+  });
+});
+
 // Consultants Section
 
 const modal1 = document.getElementById("consultModal");
@@ -285,12 +336,16 @@ form.addEventListener("submit", function (event) {
   feedbackBox.textContent = "";
   feedbackBox.className = "";
 
+  //name na dile Error dekhabe
+
   var hasError = false;
   if (nameValue === "") {
     nameError.textContent = "নাম লিখুন।";
     nameError.classList.remove("hidden");
     hasError = true;
   }
+
+  //phone na dile Error dekhabe
 
   if (phoneValue === "") {
     phoneError.textContent = "ফোন নম্বর লিখুন।";
@@ -301,6 +356,8 @@ form.addEventListener("submit", function (event) {
     phoneError.classList.remove("hidden");
     hasError = true;
   }
+
+  //email na dile Error dekhabe
 
   if (emailValue !== "" && !emailValue.includes("@")) {
     emailError.textContent =
@@ -313,9 +370,94 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
+  //sob thik thakle submit hode r ai message dekhabe
+
   feedbackBox.textContent =
-    "ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে (demo)।";
+    "জাযাকাল্লাহু খাইরান! আপনার বার্তা সফলভাবে পাঠানো হয়েছে ।";
   feedbackBox.className = "text-emerald-600 font-medium mt-2";
 
   form.reset();
+});
+
+// Footer Section
+
+//smooth scroll
+const footerNavLinks = document.querySelectorAll(".js-footer-nav");
+
+footerNavLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const targetId = link.dataset.scrollTarget;
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+});
+
+// Auto Update Footer Year
+
+const footerYearSpan = document.getElementById("footerYear");
+
+if (footerYearSpan) {
+  const currentYear = new Date().getFullYear();
+  footerYearSpan.textContent = currentYear;
+}
+// Footer সাবস্ক্রাইব click korle
+
+const newsletterForm = document.querySelector(".js-newsletter-form");
+const newsletterEmailInput = document.getElementById("newsletterEmail");
+const newsletterFeedback = document.querySelector(".js-newsletter-feedback");
+
+if (newsletterForm && newsletterEmailInput && newsletterFeedback) {
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const emailValue = newsletterEmailInput.value.trim();
+
+    if (emailValue === "" || !emailValue.includes("@")) {
+      newsletterFeedback.textContent = "ইমেইলটি সঠিকভাবে দিন";
+      newsletterFeedback.style.color = "salmon";
+      return;
+    }
+
+    newsletterFeedback.textContent =
+      "সফলভাবে সাবস্ক্রাইব হয়েছে, জাযাকাল্লাহু খাইরান!";
+    newsletterFeedback.style.color = "#a7f3d0";
+
+    newsletterEmailInput.value = "";
+  });
+}
+
+// Whatsapp CTA
+
+const WhatsappButton = document.getElementById("whatsappCta");
+
+if (WhatsappButton) {
+  WhatsappButton.addEventListener("click", () => {
+    const phoneWithContryCode = "8801608594887";
+
+    const message = "আসসালামু আলাইকুম, উমরাহ প্যাকেজ সম্পর্কে জানতে চাই।";
+
+    const encodedMessage = encodeURIComponent(message);
+
+    const waUrl = "https://wa.me/${phoneWithContryCode}?text=${encodedMessage}";
+
+    window.open(waUrl, "_blank");
+  });
+}
+
+// Social Link Tracking
+
+const socialLinks = document.querySelectorAll(".js-social-link");
+
+socialLinks.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    console.log("Social link clicked: ", icon.id);
+  });
 });

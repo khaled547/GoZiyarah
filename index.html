@@ -401,138 +401,128 @@
         </div>
       </div>
 
-      <!--Package section-->
-
-      <section
-        id="packages"
-        class="bg-emerald-50 py-16 px-6 md:px-12 lg:px-20 text-center"
-      >
-        <div class="max-w-7xl mx-auto">
-          <!-- Section Heading -->
-          <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-4">
+      <!--  Premium Packages Section  -->
+      <section id="packages" class="bg-[#F3F4F6] py-20 px-6 md:px-12 lg:px-20">
+        <div class="max-w-7xl mx-auto text-center">
+          <!-- Heading -->
+          <h2
+            class="text-4xl font-extrabold text-[#0B2447] mb-4 tracking-tight"
+          >
             আমাদের হজ ও উমরাহ প্যাকেজসমূহ
           </h2>
-          <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
-            আপনার পছন্দ অনুযায়ী প্যাকেজ বেছে নিন — সাশ্রয়ী, আরামদায়ক ও
-            নির্ভরযোগ্য ভ্রমণ অভিজ্ঞতা নিশ্চিতে।
+          <p class="text-gray-600 max-w-2xl mx-auto mb-14 text-lg">
+            আপনার বাজেট অনুযায়ী চয়ন করুন সেরা প্যাকেজ — আরাম, নির্ভরযোগ্যতা
+            এবং সম্মানজনক সেবার নিশ্চয়তা সহ।
           </p>
 
-          <!-- Packages Grid -->
-          <div class="grid gap-8 md:grid-cols-3">
-            <!-- ইকোনমি প্যাকেজ -->
+          <!-- Grid -->
+          <div class="grid gap-10 md:grid-cols-3">
+            <!-- Economy -->
             <div
-              class="bg-white package-card rounded-2xl shadow-md p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-              data-name="ইকোনমি প্যাকেজ"
+              class="js-package-card bg-white rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,0.07)] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 p-8 flex flex-col border border-gray-200"
+              data-package="economy"
               data-price-usd="999"
             >
-              <!--Img-->
-
               <img
                 src="./src/image/e.pic.png"
-                alt="ইকোনমি হজ প্যাকেজ"
                 class="w-full h-48 object-cover rounded-xl mb-6"
               />
 
-              <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              <h3 class="text-2xl font-bold text-[#0B2447] mb-2">
                 ইকোনমি প্যাকেজ
               </h3>
-              <p class="text-gray-600 mb-4">
-                সাশ্রয়ী মূল্যে মৌলিক সেবাসমূহসহ সম্পূর্ণ উমরাহ অভিজ্ঞতা।
+              <p class="text-gray-500 text-sm mb-4">
+                বাজেট-ফ্রেন্ডলি প্যাকেজ, মৌলিক সব সুবিধাসহ।
               </p>
-              <div class="text-3xl font-bold text-[#d4af37] mb-6">
-                <span class="js-price">USD 999</span>
+
+              <div class="text-3xl font-extrabold text-[#d4af37] mb-6">
+                <span class="js-package-price">USD 999</span>
               </div>
 
-              <ul class="text-gray-700 text-left space-y-2 mb-6">
-                <li>✅ এয়ার টিকিট অন্তর্ভুক্ত</li>
-                <li>✅ ৩-তারকা হোটেল</li>
-                <li>✅ ভিসা সহায়তা</li>
-                <li>✅ স্থানীয় পরিবহন</li>
+              <ul class="text-gray-700 text-left space-y-2 mb-6 text-sm">
+                <li>✔ ৩-তারকা হোটেল</li>
+                <li>✔ বিমান ভাড়া অন্তর্ভুক্ত</li>
+                <li>✔ ভিসা প্রসেসিং</li>
+                <li>✔ গ্রুপ পরিবহন</li>
               </ul>
 
-              <a
-                href="#booking"
-                class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+              <button
+                class="js-package-select mt-auto w-full bg-[#0B2447] text-white py-2.5 rounded-xl text-sm font-semibold hover:bg-[#5e86d1] transform: translateY(-6px); transition: 0.3s;"
               >
                 এখনই বুক করুন
-              </a>
+              </button>
             </div>
 
-            <!-- স্ট্যান্ডার্ড প্যাকেজ (হাইলাইটেড) -->
+            <!-- Standard (highlighted) -->
             <div
-              class="bg-white package-card border-4 border-[#d4af37] rounded-2xl shadow-lg p-10 flex flex-col items-center scale-105 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
-              data-name="স্ট্যান্ডার্ড প্যাকেজ "
-              data-price-usd="1,499"
+              class="js-package-card bg-gradient-to-b from-[#0B2447] to-[#19376D] rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] p-10 flex flex-col text-white scale-105 border-2 border-[#d4af37] hover:-translate-y-2 transition-all duration-300"
+              data-package="standard"
+              data-price-usd="1499"
             >
-              <!--Img-->
               <img
                 src="./src/image/s.p.png"
-                alt="standed"
                 class="w-full h-48 object-cover rounded-xl mb-6"
               />
 
-              <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              <h3 class="text-2xl font-extrabold mb-2">
                 স্ট্যান্ডার্ড প্যাকেজ
               </h3>
-              <p class="text-gray-600 mb-4">
-                আরামদায়ক ও সাশ্রয়ী ভ্রমণ, সর্বোত্তম মানের সেবা সহ।
+              <p class="text-blue-100 text-sm mb-4">
+                সবচেয়ে জনপ্রিয় — সেরা মান ও যুক্তিসঙ্গত দামের সমন্বয়।
               </p>
-              <div class="text-3xl font-bold text-emerald-700 mb-6">
-                <span class="js-price"> USD 1,499</span>
+
+              <div class="text-3xl font-extrabold text-[#d4af37] mb-6">
+                <span class="js-package-price">USD 1,499</span>
               </div>
 
-              <ul class="text-gray-700 text-left space-y-2 mb-6">
-                <li>✅ সরাসরি ফ্লাইট</li>
-                <li>✅ ৪-তারকা হোটেল</li>
-                <li>✅ প্রফেশনাল গাইড</li>
-                <li>✅ ২৪/৭ সহায়তা</li>
+              <ul class="text-blue-100 text-left space-y-2 mb-6 text-sm">
+                <li>✔ সরাসরি ফ্লাইট</li>
+                <li>✔ ৪-তারকা হোটেল</li>
+                <li>✔ প্রফেশনাল হজ গাইড</li>
+                <li>✔ ২৪/৭ কাস্টমার কেয়ার</li>
               </ul>
 
-              <a
-                href="#booking"
-                class="mt-auto bg-emerald-700 text-white font-medium px-6 py-2 rounded-full hover:bg-emerald-800 transition"
+              <button
+                class="js-package-select mt-auto w-full bg-white text-[#0B2447] py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-300 transform: translateY(-6px); transition: 0.3s;"
               >
                 এখনই বুক করুন
-              </a>
+              </button>
             </div>
 
-            <!-- প্রিমিয়াম প্যাকেজ -->
+            <!-- Premium -->
             <div
-              class="bg-white package-card rounded-2xl shadow-md p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-              data-name="প্রিমিয়াম প্যাকেজ"
-              data-price-usd="2,299"
+              class="js-package-card bg-white rounded-2xl shadow-[0_6px_20px_rgba(0,0,0,0.07)] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 p-8 flex flex-col border border-gray-200"
+              data-package="premium"
+              data-price-usd="2299"
             >
-              <!--Img-->
-
               <img
                 src="./src/image/p.pic.png"
-                alt="premium"
                 class="w-full h-48 object-cover rounded-xl mb-6"
               />
 
-              <h3 class="text-2xl font-semibold text-emerald-900 mb-2">
+              <h3 class="text-2xl font-bold text-[#0B2447] mb-2">
                 প্রিমিয়াম প্যাকেজ
               </h3>
-              <p class="text-gray-600 mb-4">
-                উচ্চমানের হজ/উমরাহ অভিজ্ঞতা, বিলাসবহুল সেবা ও আরামদায়ক ভ্রমণ।
+              <p class="text-gray-500 text-sm mb-4">
+                ভিআইপি সুবিধা, সর্বোচ্চ আরাম ও সম্মানজনক সেবা।
               </p>
-              <div class="text-3xl font-bold text-[#d4af37] mb-6">
-                <span class="js-price">USD 2,299</span>
+
+              <div class="text-3xl font-extrabold text-[#d4af37] mb-6">
+                <span class="js-package-price">USD 2,299</span>
               </div>
 
-              <ul class="text-gray-700 text-left space-y-2 mb-6">
-                <li>✅ বিজনেস ক্লাস ফ্লাইট</li>
-                <li>✅ ৫-তারকা হোটেল</li>
-                <li>✅ প্রাইভেট ট্রান্সপোর্ট</li>
-                <li>✅ ভিআইপি গাইডেড ট্যুর</li>
+              <ul class="text-gray-700 text-left space-y-2 mb-6 text-sm">
+                <li>✔ বিজনেস ক্লাস ফ্লাইট</li>
+                <li>✔ ৫-তারকা হোটেল</li>
+                <li>✔ প্রাইভেট ট্রান্সপোর্ট</li>
+                <li>✔ ভিআইপি গাইডেড ট্যুর</li>
               </ul>
 
-              <a
-                href="#booking"
-                class="mt-auto bg-[#d4af37] text-emerald-900 font-medium px-6 py-2 rounded-full hover:bg-emerald-600 hover:text-white transition"
+              <button
+                class="js-package-select mt-auto w-full bg-[#0B2447] text-white py-2.5 rounded-xl text-sm font-semibold hover:bg-[#5d8ce4] transform: translateY(-6px); transition: 0.3s;"
               >
                 এখনই বুক করুন
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -1157,142 +1147,307 @@
       </section>
 
       <!-- Footer Section -->
-      <footer class="bg-emerald-800 text-white py-12 px-6 md:px-12 lg:px-20">
-        <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+
+      <footer
+        id="site-footer"
+        class="bg-blue-950 text-white pt-12 pb-6 px-6 md:px-12 lg:px-20 border-t border-blue-700"
+      >
+        <div
+          class="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-4 items-start"
+        >
           <!-- ১️⃣ লোগো ও ছোট বিবরণ -->
-          <div>
-            <div class="flex items-center space-x-2 mb-3">
+          <div class="space-y-4">
+            <div class="flex items-center gap-2">
               <img
                 src="./src/image/logo2.jpg"
                 alt="GoZiyarah লোগো"
-                class="w-10 h-10"
+                class="w-11 h-11 rounded-full shadow-md"
               />
-              <h2 class="text-2xl font-bold">GoZiyarah</h2>
+              <div>
+                <h2 class="text-2xl font-bold tracking-tight">GoZiyarah</h2>
+                <p class="text-xs uppercase tracking-[0.2em] text-emerald-200">
+                  Hajj &amp; Umrah Travel
+                </p>
+              </div>
             </div>
-            <p class="text-gray-200 leading-relaxed">
+            <p class="text-sm md:text-base text-emerald-100 leading-relaxed">
               বিশ্বস্ত হজ ও উমরাহ ট্রাভেল পার্টনার — আল্লাহর পথে আপনার যাত্রাকে
-              করে তুলুন আরও সহজ, নিরাপদ ও শান্তিময়।
+              করি আরও সহজ, নিরাপদ ও সুসংগঠিত। প্যাকেজ, গাইডেন্স ও সাপোর্ট সব এক
+              প্ল্যাটফর্মে।
             </p>
+
+            <!-- Trust / License Info (JS hook ready) -->
+            <div
+              class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-800/70 border border-emerald-600 text-xs text-emerald-100 js-trust-badge"
+            >
+              <span
+                class="inline-flex h-2 w-2 rounded-full bg-emerald-300 animate-pulse"
+              ></span>
+              <span
+                >হজ লাইসেন্স নং: <span id="licenseNumber">#GZ-0000</span></span
+              >
+            </div>
           </div>
 
           <!-- ২️⃣ গুরুত্বপূর্ণ লিংক -->
-          <div>
+          <nav
+            class="space-y-4"
+            aria-label="গুরুত্বপূর্ণ লিংক"
+            id="footer-main-links"
+          >
             <h3
-              class="text-xl font-semibold mb-3 border-b border-emerald-600 pb-1 inline-block"
+              class="text-lg md:text-xl font-semibold border-b border-emerald-600 pb-1 inline-block"
             >
               গুরুত্বপূর্ণ লিংক
             </h3>
-            <ul class="space-y-2 mt-3">
+            <ul class="space-y-2 text-sm md:text-base">
               <li>
-                <a href="#home" class="hover:text-amber-300 transition">হোম</a>
+                <a
+                  href="#home"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="home"
+                  >হোম</a
+                >
               </li>
               <li>
-                <a href="#about" class="hover:text-amber-300 transition"
+                <a
+                  href="#about"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="about"
                   >আমাদের সম্পর্কে</a
                 >
               </li>
               <li>
-                <a href="#services" class="hover:text-amber-300 transition"
+                <a
+                  href="#services"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="services"
                   >সেবা</a
                 >
               </li>
               <li>
-                <a href="#packages" class="hover:text-amber-300 transition"
+                <a
+                  href="#packages"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="packages"
                   >প্যাকেজ</a
                 >
               </li>
               <li>
-                <a href="#contact" class="hover:text-amber-300 transition"
+                <a
+                  href="#consultants"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="consultants"
+                  >পরামর্শক</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="faq"
+                  >প্রশ্নোত্তর</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="contact"
                   >যোগাযোগ</a
                 >
               </li>
             </ul>
+          </nav>
+
+          <!-- ৩️⃣ সহায়তা ও রিসোর্স -->
+          <div class="space-y-4" id="footer-resources">
+            <h3
+              class="text-lg md:text-xl font-semibold border-b border-emerald-600 pb-1 inline-block"
+            >
+              সহায়তা ও রিসোর্স
+            </h3>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>
+                <a
+                  href="#journey-moments"
+                  class="hover:text-amber-300 transition-colors js-footer-nav"
+                  data-scroll-target="journey-moments"
+                  >যাত্রার মুহূর্ত</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-amber-300 transition-colors"
+                  >টার্মস &amp; কন্ডিশন (শীঘ্রই)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-amber-300 transition-colors"
+                  >প্রাইভেসি পলিসি (শীঘ্রই)</a
+                >
+              </li>
+              <li>
+                <button
+                  type="button"
+                  id="openSupportModal"
+                  class="text-left hover:text-amber-300 transition-colors js-open-support"
+                >
+                  জরুরি সাপোর্ট গাইড
+                </button>
+              </li>
+            </ul>
+
+            <!-- Newsletter (JS-ready, no actual submission here) -->
+            <div class="mt-4 space-y-2">
+              <p class="text-sm text-emerald-100">
+                নতুন প্যাকেজ, অফার ও জরুরি নোটিশ পেতে ইমেইল সাবস্ক্রাইব করুন।
+              </p>
+              <form
+                id="footerNewsletterForm"
+                class="flex flex-col sm:flex-row gap-2 js-newsletter-form"
+              >
+                <label class="sr-only" for="newsletterEmail">ইমেইল</label>
+                <input
+                  id="newsletterEmail"
+                  type="email"
+                  class="w-full px-3 py-2 rounded-lg text-sm text-slate-900 border border-blue-500 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                  placeholder="আপনার ইমেইল ঠিকানা"
+                />
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-amber-400 text-emerald-900 text-sm font-semibold hover:bg-amber-300 transition-colors js-newsletter-submit"
+                >
+                  সাবস্ক্রাইব
+                </button>
+              </form>
+              <p
+                id="newsletterFeedback"
+                class="text-xs text-emerald-200 js-newsletter-feedback"
+              ></p>
+            </div>
           </div>
 
-          <!-- ৩️⃣ যোগাযোগের তথ্য -->
-          <div>
+          <!-- ৪️⃣ যোগাযোগ + সোশ্যাল -->
+          <div class="space-y-4" id="footer-contact">
             <h3
-              class="text-xl font-semibold mb-3 border-b border-emerald-600 pb-1 inline-block"
+              class="text-lg md:text-xl font-semibold border-b border-emerald-600 pb-1 inline-block"
             >
               যোগাযোগ
             </h3>
-            <p class="text-gray-200 mt-3">
-              📞
-              <a
-                href="tel:+8801712345678"
-                class="hover:text-amber-300 transition"
-                >01828-877771</a
-              ><br />
-              ✉️
-              <a
-                href="mailto:goziyarah@gmail.com"
-                class="hover:text-amber-300 transition"
-                >goziyarah@gmail.com</a
-              ><br />
-              📍 ১২৩, মতিঝিল কমার্শিয়াল এরিয়া, ঢাকা-১০০০
+            <p class="text-sm md:text-base text-emerald-100 leading-relaxed">
+              গোজিয়ারাহ ট্রাভেল এজেন্সি<br />
+              ১২৩, মতিঝিল কমার্শিয়াল এরিয়া, ঢাকা-১০০০, বাংলাদেশ
             </p>
 
-            <!-- ৪️⃣ সোশ্যাল মিডিয়া আইকন -->
-            <div class="flex space-x-4 mt-4">
-              <a
-                href="#"
-                class="hover:text-amber-300 transition"
-                aria-label="Facebook"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+            <div class="space-y-1 text-sm md:text-base text-emerald-100">
+              <p>
+                📞
+                <a
+                  href="tel:+8801828877771"
+                  class="hover:text-amber-300 transition-colors js-phone-link"
+                  >01608594887</a
                 >
-                  <path
-                    d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="hover:text-amber-300 transition"
-                aria-label="YouTube"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+              </p>
+              <p>
+                ✉️
+                <a
+                  href="mailto:goziyarah@gmail.com"
+                  class="hover:text-amber-300 transition-colors js-email-link"
+                  >goziyarah@gmail.com</a
                 >
-                  <path
-                    d="M10 15l5.19-3L10 9v6zm12-3c0-2.5-.2-4.1-.3-5.1-.2-1-.9-1.8-1.9-2C18.9 4.5 12 4.5 12 4.5s-6.9 0-7.8.4c-1 .2-1.7 1-1.9 2C2.2 7.9 2 9.5 2 12s.2 4.1.3 5.1c.2 1 .9 1.8 1.9 2 .9.4 7.8.4 7.8.4s6.9 0 7.8-.4c1-.2 1.7-1 1.9-2 .1-1 .3-2.6.3-5.1z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="hover:text-amber-300 transition"
-                aria-label="Instagram"
+              </p>
+            </div>
+
+            <!-- WhatsApp CTA (JS hook) -->
+            <button
+              type="button"
+              id="whatsappCta"
+              class="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-sm font-semibold text-white shadow js-whatsapp-btn"
+            >
+              <span>📲</span>
+              <span>WhatsApp এ ত্বরিত জিজ্ঞাসা</span>
+            </button>
+
+            <!-- সোশ্যাল মিডিয়া -->
+            <div class="pt-2">
+              <p
+                class="text-xs uppercase tracking-[0.2em] text-emerald-300 mb-2"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+                আমাদের সোশ্যাল প্ল্যাটফর্ম
+              </p>
+              <div class="flex items-center gap-4">
+                <a
+                  href="#"
+                  class="hover:text-amber-300 transition-colors js-social-link"
+                  aria-label="GoZiyarah Facebook পেজ"
+                  id="socialFacebook"
                 >
-                  <path
-                    d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
-                  />
-                </svg>
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-amber-300 transition-colors js-social-link"
+                  aria-label="GoZiyarah YouTube চ্যানেল"
+                  id="socialYouTube"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 15l5.19-3L10 9v6zm12-3c0-2.5-.2-4.1-.3-5.1-.2-1-.9-1.8-1.9-2C18.9 4.5 12 4.5 12 4.5s-6.9 0-7.8.4c-1 .2-1.7 1-1.9 2C2.2 7.9 2 9.5 2 12s.2 4.1.3 5.1c.2 1 .9 1.8 1.9 2 .9.4 7.8.4 7.8.4s6.9 0 7.8-.4c1-.2 1.7-1 1.9-2 .1-1 .3-2.6.3-5.1z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-amber-300 transition-colors js-social-link"
+                  aria-label="GoZiyarah Instagram প্রোফাইল"
+                  id="socialInstagram"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- কপিরাইট -->
+        <!-- Bottom Bar -->
         <div
-          class="border-t border-emerald-700 mt-10 pt-6 text-center text-gray-300 text-sm"
+          class="max-w-7xl mx-auto mt-10 pt-4 border-t border-emerald-800 flex flex-col md:flex-row items-center justify-between gap-3 text-xs md:text-sm text-emerald-200"
         >
-          © ২০২৫ GoZiyarah. সর্বস্বত্ব সংরক্ষিত।
+          <p>
+            © <span id="footerYear">২০২৫</span> GoZiyarah. সর্বস্বত্ব সংরক্ষিত।
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="hidden sm:inline">🌙</span>
+            <span
+              >দো’আ করি — আপনার যাত্রা হোক নিরাপদ, গ্রহণযোগ্য ও কল্যাণময়।</span
+            >
+          </p>
         </div>
       </footer>
+
       <!--Top Buttom-->
       <button
         id="toTop"
